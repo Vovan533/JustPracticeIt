@@ -1,6 +1,6 @@
-<h2>Add a new comment</h2>
+<h1>Добавить комментарий</h1>
 <form action="{% url "blog:post_comment" post.id %}" method="post">
   {{ form.as_p }}
   {% csrf_token %}
-  <p><input type="submit" value="Add comment"></p>
+  <p><input type="submit" value="Отправить комментарий"></p>
 </form>
